@@ -1,5 +1,10 @@
 # TCO20
 
+Detect issues based on data from the last week for the country.  
+Calculate various warnings and errors for users.  
+Useful for travellers.
+
+
 ## requirement
 - node v12
 - yarn
@@ -38,3 +43,4 @@ Options:
 
 ## DEMO
 https://monosnap.com/file/WRsTf4sPpGVkSCx0smMDLFBTecHZFn
+LIVE DEMO: https://tco20-sky.herokuapp.com/
