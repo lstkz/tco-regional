@@ -3,7 +3,7 @@ import { ajax, AjaxRequest } from 'rxjs/ajax';
 import { map } from 'rxjs/operators';
 
 // IMPORTS
-import { Foo } from './types';
+import { CovidData, Foo } from './types';
 // IMPORTS END
 
 export class APIClient {
@@ -16,6 +16,12 @@ export class APIClient {
   }
 
   // SIGNATURES
+  data_getLocationData(location: string): Rx.Observable<CovidData[]> {
+    return this.call('data.getLocationData', { location });
+  }
+  data_getLocations(): Rx.Observable<string[]> {
+    return this.call('data.getLocations', {});
+  }
   example_createFoo(values: { foo: string }): Rx.Observable<Foo> {
     return this.call('example.createFoo', { values });
   }

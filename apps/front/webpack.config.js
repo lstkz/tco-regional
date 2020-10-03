@@ -9,7 +9,7 @@ const createStyledComponentsTransformer = require('typescript-plugin-styled-comp
 
 const __DEV__ = process.env.NODE_ENV === 'development';
 
-const title = 'Poker Room';
+const title = 'Is My Country OK?';
 
 const styledComponentsTransformer = createStyledComponentsTransformer({
   getDisplayName: (filename, bindingName) => {

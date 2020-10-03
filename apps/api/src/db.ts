@@ -25,6 +25,7 @@ import {
   CollectionInsertManyOptions,
   OptionalId,
   WithId,
+  MongoDistinctPreferences,
 } from 'mongodb';
 
 let client: MongoClient | null = null;
@@ -105,6 +106,11 @@ interface DbCollection<TSchema> {
     options?: CommonOptions
   ): Promise<DeleteWriteOpResultObject>;
   update(model: TSchema, fields: Array<keyof TSchema>): Promise<void>;
+  distinct(
+    key: string,
+    query?: FilterQuery<TSchema>,
+    options?: MongoDistinctPreferences
+  ): Promise<any[]>;
 }
 
 export function createCollection<T>(
@@ -163,6 +169,9 @@ export function createCollection<T>(
     },
     deleteOne(...args) {
       return _getCollection().deleteOne(...args);
+    },
+    distinct(...args) {
+      return _getCollection().distinct(...args);
     },
     async update(model: any, fields) {
       if (model._id == null) {

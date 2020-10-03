@@ -1,4 +1,4 @@
-# fullstack-starter
+# TCO20
 
 ## requirement
 - node v12
@@ -10,6 +10,7 @@
 ## deployment
 ```
 yarn
+
 # terminal 1
 cd apps/api
 yarn run dev
@@ -33,3 +34,7 @@ Options:
 - Set env variables from the "configuration" section.
 - App should be deployed automatically on every push to master.
 - You can create a free mongodb database on https://cloud.mongodb.com/
+
+
+## DEMO
+https://monosnap.com/file/WRsTf4sPpGVkSCx0smMDLFBTecHZFn

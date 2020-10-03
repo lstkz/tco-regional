@@ -14,6 +14,8 @@
   "dependencies": {
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
+    "@types/react-loader-spinner": "^3.1.0",
+    "@types/react-select": "^3.0.21",
     "@types/typed.js": "^2.0.9",
     "@types/webpack-env": "^1.14.0",
     "clean-webpack-plugin": "^3.0.0",
@@ -23,6 +25,8 @@
     "html-webpack-plugin": "^3.2.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-loader-spinner": "^3.1.14",
+    "react-select": "^3.1.0",
     "remeda": "^0.0.20",
     "rxjs": "^6.3.3",
     "style-loader": "^1.0.0",
